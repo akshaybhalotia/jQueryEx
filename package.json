@@ -1,0 +1,31 @@
+{
+  "name": "jqueryex",
+  "version": "1.0.0",
+  "description": "Move a box in div on arrow key press",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshaybhalotia/jQueryEx.git"
+  },
+  "author": "Akshay Bhalotia",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-jquery": "^2.1.1",
+    "jquery": "^2.1.4",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.6",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-jasmine-spec-runner-reporter": "^0.1.3"
+  },
+  "bugs": {
+    "url": "https://github.com/akshaybhalotia/jQueryEx/issues"
+  },
+  "homepage": "https://github.com/akshaybhalotia/jQueryEx#readme"
+}
