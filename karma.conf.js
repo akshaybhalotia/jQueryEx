@@ -13,13 +13,6 @@ module.exports = function(config) {
     frameworks: ['jquery-2.1.3', 'jasmine-jquery', 'jasmine'],
     
 
-    // plugins: [
-    //     require('karma-jquery'),
-    //     require('karma-jasmine-jquery'),
-    //     require('karma-jasmine')
-    //     ],
-
-
     // list of files / patterns to load in the browser
     files: [
     {
@@ -27,6 +20,12 @@ module.exports = function(config) {
     	watched: true,
     	served: true,
     	included: false
+    },
+    {
+        pattern: 'spec/*.css',
+        watched: true,
+        served: true,
+        included: false
     },
     'lib/*.js',
     'spec/*[sS]pec.js'
