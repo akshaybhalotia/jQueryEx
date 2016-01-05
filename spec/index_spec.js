@@ -1,12 +1,13 @@
 describe("An Event Handler", function () {
   
   var divMover, eventHandler;
-  var target, container;
+  var body, target, container;
   beforeEach(function () {
     jasmine.getFixtures().fixturesPath = 'base/spec/';
     loadFixtures('fixtures.html');
     divMover = new DivMover();
     eventHandler = new EventHandler(divMover);
+    body = $('body');
     container = $('.container');
     target = $('.target');
   });
@@ -18,7 +19,7 @@ describe("An Event Handler", function () {
       var e = $.Event('keyup', { keyCode: 37 });
 
       eventHandler.init();
-      container.trigger(e);
+      body.trigger(e);
 
       expect(eventHandler.keyDetector).toHaveBeenCalled();
     });
